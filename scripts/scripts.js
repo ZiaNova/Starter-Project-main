@@ -19,7 +19,12 @@ var app={
                 q:'What sounds most pump you up to complete said task?',
                 options: ['Peace', 'Running Water', 'Cafe Music', 'My earbuds'],
                 answer:2
-            }            
+            },
+            {
+                q:'What type of temperature helps you focus?',
+                options: ['Peace', 'Running Water', 'Cafe Music', 'My earbuds'],
+                answer:3
+            }              
         ],
         index:0,
         load:function(){
@@ -40,6 +45,7 @@ var app={
             this.index++;
             this.load();
         },
+        /* Update to stor user imput */
         check: function(ele){
             var id=ele.id.split('');
             if(id[id.length-1]==this.questions[this.index].answer){
@@ -50,7 +56,7 @@ var app={
             else{
                 ele.className="wrong";
             }
-        },
+        }, /* this right here */
         preventClick:function(){
             for(let i=0; i<ul.children.length; i++){
                 ul.children[i].style.pointerEvents="none";
@@ -79,3 +85,7 @@ function next(){
     app.next();
     app.allowClick();
 }
+
+/*
+make an arrayy called user immputs, add response to array, calculate the array, build out a function -> condition dtatement, if  
+add comment at the top to credit*/
