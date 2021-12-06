@@ -45,7 +45,7 @@ var app={
             this.index++;
             this.load();
         },
-        /* Update to stor user imput */
+        /* Update to store user imput and add algorith here*/
         check: function(ele){
             var id=ele.id.split('');
             if(id[id.length-1]==this.questions[this.index].answer){
