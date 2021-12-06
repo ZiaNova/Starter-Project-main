@@ -1,6 +1,10 @@
 /* ===== YOUR CSS GOES HERE ===== */
 body {
-  background-color: teal;
+  background-image: url('/images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+  background-size: 100%;
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -92,8 +96,8 @@ body {
   color: white;
   background-color: sienna;
   border: none;
-  border-radius: 8px;
-  
+  border-radius: 8px;}
+
 .quiz-wrapper .score .score-card {
   width: 60%;
   float: left;
@@ -110,4 +114,3 @@ body {
 }
 
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
-<->
