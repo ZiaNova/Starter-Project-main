@@ -8,6 +8,9 @@
 	<title>quiz sample</title>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
 
 </head>
 
@@ -33,18 +36,20 @@
 			<input type="radio" name="style" id="q3opt2" value="new"><label for="q3opt2">Newer/modern spots</label>
 		</div>
 		<div id="question4">
-			<h3>Question 4: </h3>
-			<input type="radio" name="you-add-this" id="q4opt1" value=""><label for="q4opt1"></label>
-			<input type="radio" name="you-add-this" id="q4opt2" value=""><label for="q4opt2"></label>
-			<input type="radio" name="you-add-this" id="q4opt3" value=""><label for="q4opt3"></label>
-			<input type="radio" name="you-add-this" id="q4opt4" value=""><label for="q4opt4"></label>
+			<h3>Question 4: Do you like...?</h3>
+			<input type="radio" name="type" id="q4opt1" value="uncommon"><label for="q4opt1">Low key/uncommon locations </label>
+			<input type="radio" name="type" id="q4opt2" value="popular"><label for="q4opt2">Popular/touristy locations</label>
 		</div>
 		<div id="question5">
-			<h3>Question 5: </h3>
-			<input type="radio" name="you-add-this" id="q5opt1" value=""><label for="q5opt1"></label>
-			<input type="radio" name="you-add-this" id="q5opt2" value=""><label for="q5opt2"></label>
-			<input type="radio" name="you-add-this" id="q5opt3" value=""><label for="q5opt3"></label>
-			<input type="radio" name="you-add-this" id="q5opt4" value=""><label for="q5opt4"></label>
+			<h3>Question 5: Do you prefer the noise level to be… </h3>
+			<input type="radio" name="sound" id="q5opt1" value="low"><label for="q5opt1">Low</label>
+			<input type="radio" name="sound" id="q5opt2" value="medium"><label for="q5opt2">Medium</label>
+			<input type="radio" name="sound" id="q5opt3" value="high"><label for="q5opt3">High</label>
+		</div>
+        <div id="question6">
+			<h3>Question 5: Do you prefer the noise level to be… </h3>
+			<input type="radio" name="setting" id="q5opt1" value="indoors"><label for="q5opt1">Indoors</label>
+			<input type="radio" name="setting" id="q5opt2" value="outdoors"><label for="q5opt2">Outdoors</label>
 			<button>Show my quiet place</button>
 		</div>
 

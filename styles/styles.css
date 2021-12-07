@@ -13,7 +13,7 @@ body {
   box-sizing: border-box;
 }
 
-.quiz-wrapper {
+.questionContainer {
   height: 400px;
   width: 600px;
   background-color: white;
