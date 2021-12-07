@@ -9,6 +9,16 @@ $(document).ready(function () {
 	});
 });
 
+const question1 = document.getElementsByName('activity');
+const question2 = document.getElementsByName('density');
+const question3 = document.getElementsByName('style');
+const question4 = document.getElementsByName('type');
+const question5 = document.getElementsByName('sound');
+const question6 = document.getElementsByName('setting');
+const endBtn = document.getElementById('end-result')
+
+endBtn.addEventListener("click", getAnswers);
+
 /* get handles on document nodes here (see in-class examples)  You need all the radio buttons AND the button at the end*/
 
 /* add your event listener here (see in-class examples) it goes on the button */
