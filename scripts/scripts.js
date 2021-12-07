@@ -1,91 +1,40 @@
-/* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
+// initialize the carousel
+// documentation here... read and apply it:
+// https://github.com/kenwheeler/slick/
+// demos here:
+// http://kenwheeler.github.io/slick/
+$(document).ready(function () {
+	$(".questionContainer").slick({
+		dots: true
+	});
+});
 
-var ul = document.getElementById('ul')
-var nextButton = document.getElementById('btnNext');
-var quizbox = document.getElementById('questionBox')
-var opt1 = document.getElementById('opt1')
-var opt2 = document.getElementById('opt2')
-var opt3 = document.getElementById('opt3')
-var opt4 = document.getElementById('opt4')
+/* get handles on document nodes here (see in-class examples)  You need all the radio buttons AND the button at the end*/
 
-var app={
-        questions:[
-            {
-                q:'What are you looking to do?',
-                options: ['Study', 'Meditate', 'Work Out', 'Stroll'],
-                answer:1
-            },
-            {
-                q:'What sounds most pump you up to complete said task?',
-                options: ['Peace', 'Running Water', 'Cafe Music', 'My earbuds'],
-                answer:2
-            },
-            {
-                q:'What type of temperature helps you focus?',
-                options: ['Peace', 'Running Water', 'Cafe Music', 'My earbuds'],
-                answer:3
-            }              
-        ],
-        index:0,
-        load:function(){
-            if(this.index<=this.questions.length-1){
-                quizbox.innerHTML=this.index+1 + ". " +this.questions[this.index].q;
-                opt1.innerHTML=this.questions[this.index].options[0];
-                opt2.innerHTML=this.questions[this.index].options[1];
-                opt3.innerHTML=this.questions[this.index].options[2];
-                opt4.innerHTML=this.questions[this.index].options[3];
-            }
-            else {
-                quizbox.innerHTML="Quiz Completed!";
-                ul.style.display="none";
-                nextButton.style.display="none";
-            }
-        },
-        next: function(){
-            this.index++;
-            this.load();
-        },
-        /* Update to store user imput and add algorith here*/
-        check: function(ele){
-            var id=ele.id.split('');
-            if(id[id.length-1]==this.questions[this.index].answer){
-                this.score++;
-                ele.className="correct";
-                this.scoreCard();
-            }
-            else{
-                ele.className="wrong";
-            }
-        }, /* this right here */
-        preventClick:function(){
-            for(let i=0; i<ul.children.length; i++){
-                ul.children[i].style.pointerEvents="none";
-            }
-        },
-        allowClick:function(){
-            for(let i=0; i<ul.children.length; i++){
-                ul.children[i].style.pointerEvents="auto";
-                ul.children[i].className=''
-            }
-        },
-        score:0,
-        scoreCard:function(){
-            scoreCard.innerHTML=this.questions.length + "/" + this.score;
-        }
-}
+/* add your event listener here (see in-class examples) it goes on the button */
 
-window.load=app.load();
+// your project data goes here... maybe an array of objects?
 
-function button(ele){
-    app.check(ele);
-    app.preventClick();
-}
+const data = [
+	{
+		name: "Boston Common",
+		activity: "meditate",
+		density: "high",
+		style: "older"
+	},
+	{
+		name: "Amory Park",
+		activity: "meditate",
+		density: "medium",
+		style: "newer"
+	}
+];
 
-function next(){
-    app.next();
-    app.allowClick();
-}
+// collect user answers in an object
+let userAnswers = {
+	activity: "",
+	density: "",
+	style: ""
+};
 
-/*
-make an arrayy called user immputs, add response to array, calculate the array, build out a function -> condition dtatement, if  
-add comment at the top to credit*/
+function getAnswers() {}

@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- PUT A TITLE IN HERE -->
-    <title>QuietScape | Quiz</title>
-    <!-- PUT A DESCRIPTION IN HERE -->
-    <meta name="description" content="describe content of the page here...." />
-    <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
-    <link rel="stylesheet" href="styles.normalize.css" />
-    <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
-    <!-- LINK TO YOUR STYLES -->
-    <link rel="stylesheet" href="styles/styles.css" />
-    <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
-    <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
-    <script src="scripts/scripts.js" defer></script>
-  </head>
-  <body>
-    <!-- YOUR HTML GOES HERE -->
-    <div class="b-g">
-    <div class="quiz-wrapper">
 
-      <div class="questionOne">
-        <h3>What do you want to do?</h3>
-        <input type="radio" name="todo" value="thing one" id="q1opt1"><label for="q1opt1">Thing One</label>
-        <input type="radio" name="todo" value="thing two" id="q1opt2"><label for="q1opt2">Thing Two</label>
-        <input type="radio" name="todo" value="thing three" id="q1opt3"><label for="q1opt3">Thing Three</label>
-        <input type="radio" name="todo" value="thing four" id="q1opt4"><label for="q1opt4">Thing Four</label>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>quiz sample</title>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-      </div>
+</head>
 
+<body>
+	<div class="questionContainer">
+		<div id="question1">
+			<h3>Question 1: What are you looking for?</h3>
+			<input type="radio" name="activity" id="q1opt1" value="study"><label for="q1opt1">Study</label>
+			<input type="radio" name="activity" id="q1opt2" value="workout"><label for="q1opt2">Work out</label>
+			<input type="radio" name="activity" id="q1opt3" value="stroll"><label for="q1opt3">Stroll</label>
+			<input type="radio" name="activity" id="q1opt4" value="meditate"><label for="q1opt4">Meditate</label>
+		</div>
+		<div id="question2">
+			<h3>Question 2: What do you prefer?</h3>
+			<input type="radio" name="density" id="q2opt1" value="low"><label for="q2opt1">Low occupancy (less than 15 people)</label>
+			<input type="radio" name="density" id="q2opt2" value="medium"><label for="q2opt2">Medium occupancy (15-30 people)</label>
+			<input type="radio" name="density" id="q2opt3" value="high"><label for="q2opt3">High occupancy (30+ people)</label>
 
-      <div id="questionBox" class="question">Sample Question</div>
-      <div class="options">
-      </div>
-      <div class="score">
-        <div class="next">
-          <button id="btnNext" type="button" onclick="next()">Next</button>
-        </div>
-        <div class="back">
-          <button id="btnBack" type="button" onclick="back()">Back</button>
-        </div>
-        <!-- <div class="score-card">SCORE: <span id="scoreCard">0</span></div>
-      </div>-->
-    </div>
-  </div>
-    <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. 
-    - add title
-  - add results page
-- add element image for each options-->
-  </body>
+		</div>
+		<div id="question3">
+			<h3>Question 3: Do you like...?</h3>
+			<input type="radio" name="style" id="q3opt1" value="old"><label for="q3opt1">Older/historic spots</label>
+			<input type="radio" name="style" id="q3opt2" value="new"><label for="q3opt2">Newer/modern spots</label>
+		</div>
+		<div id="question4">
+			<h3>Question 4: </h3>
+			<input type="radio" name="you-add-this" id="q4opt1" value=""><label for="q4opt1"></label>
+			<input type="radio" name="you-add-this" id="q4opt2" value=""><label for="q4opt2"></label>
+			<input type="radio" name="you-add-this" id="q4opt3" value=""><label for="q4opt3"></label>
+			<input type="radio" name="you-add-this" id="q4opt4" value=""><label for="q4opt4"></label>
+		</div>
+		<div id="question5">
+			<h3>Question 5: </h3>
+			<input type="radio" name="you-add-this" id="q5opt1" value=""><label for="q5opt1"></label>
+			<input type="radio" name="you-add-this" id="q5opt2" value=""><label for="q5opt2"></label>
+			<input type="radio" name="you-add-this" id="q5opt3" value=""><label for="q5opt3"></label>
+			<input type="radio" name="you-add-this" id="q5opt4" value=""><label for="q5opt4"></label>
+			<button>Show my quiet place</button>
+		</div>
+
+	</div>
+</body>
+
 </html>
-
