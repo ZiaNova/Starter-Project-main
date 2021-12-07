@@ -22,8 +22,22 @@
 
   nav {
     background-color:green;
-    padding: .5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
     
+    
+  }
+
+  .main-nav > li > a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    padding-bottom: 0.15em;
   }
 
   .main-nav {
