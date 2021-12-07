@@ -199,5 +199,13 @@ let userAnswers = {
 };
 
 
-function getAnswers() {}
+function getAnswers() {
+
+
+
+
+
+
+	
+}
 
