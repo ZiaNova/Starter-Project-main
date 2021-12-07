@@ -200,12 +200,10 @@ let userAnswers = {
 
 
 function getAnswers() {
+//if answer for q1 is x + q2 is y +... = 
+
+//if usersAnswers[density] = low
 
 
 
-
-
-
-	
-}
 

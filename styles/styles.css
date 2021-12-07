@@ -20,8 +20,21 @@
     box-sizing: border-box;
   }
 
+  nav {
+    background-color:green;
+    padding: .5rem;
+    
+  }
 
-  #questioncontainer {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+ 
+
+ #questioncontainer {
     display: inline-block;
     background-color: #607d8b;
     width: 46%;
