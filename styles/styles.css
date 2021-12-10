@@ -8,7 +8,7 @@
     background-position: top;
     background-attachment: scroll;
     background-size: auto;
-    font-family: 'Mulish', sans-serif;
+  
   }
 
   * {
@@ -17,9 +17,7 @@
   
 
 .questionContainer {
-    background-color: #607d8b;
-    color: white;
-    font-size: large;
+    background-color: #ffffff;
     font-family:'Mulish', sans-serif;
     height: 300px;
     width: 500px;
@@ -34,12 +32,8 @@
 
   .questionContainer .question {
     min-height: 50px;
-    background-color: whitesmoke;
     border-radius: 8px;
-    color: #607d8b;
-    padding: 15px;
-    float: center;
-    width: 100%;
+    color: green;
     font-size: 25px;
   }
 
@@ -61,6 +55,12 @@ text-decoration: none;
 color: green;
 font-size: 2.5em;
 font-style: bold;
+text-transform: uppercase;
+letter-spacing: 2px;
+
+
+
+
 }
 
 
