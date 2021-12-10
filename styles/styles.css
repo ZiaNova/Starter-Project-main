@@ -30,7 +30,7 @@ body {
 .questionContainer .question {
   min-height: 50px;
   border-radius: 8px;
-  color: green;
+  color: #008080;
   font-size: 25px;
 }
 
@@ -57,6 +57,7 @@ nav a {
   border-radius: 20px;
   transition: 0.3s;
   font-size: 25px;
+  font-family: "Mulish", sans-serif;;
 
 }
 nav a:not(:last-child) {
