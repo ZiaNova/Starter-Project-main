@@ -63,7 +63,7 @@ nav a {
   padding: 2px 15px;
   border-radius: 20px;
   transition: 0.3s;
-  transition-property: background;
+  /*transition-property: background; */
 }
 nav a:not(:last-child) {
   margin-right: 30px;
@@ -112,12 +112,11 @@ nav a:hover {
   padding: 10px 20px;
   border-radius: 5px;
   transition: 0.3s;
-  transition-property: background;
+  /*transition-property: background; */
 }
 .content .quiz-button:hover {
   background: tan;
 }
-)
 
 #homebody {
   margin: 0;
