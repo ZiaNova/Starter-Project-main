@@ -56,45 +56,18 @@ header {
   letter-spacing: 2px;
 } */
 nav a {
-text-decoration: none;
-color: green;
-font-size: 2.6em;
-font-style: bold;
-text-transform: uppercase;
-letter-spacing: 2px;
+  color: green;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  /*transition-property: background; */
 }
-
-img {
-  float: left;
-  width:  100px;
-  height: 100px;
-  object-fit: cover;
+nav a:not(:last-child) {
+  margin-right: 30px;
 }
-
-.directory-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  
-}
-
-/* Create four equal columns that sits next to each other */
-.picture {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-  
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  
-}
-
-
-
 
 nav a:hover {
   background: lightgray;
@@ -109,30 +82,42 @@ nav a:hover {
   border-radius: 5px;
 }
 
-/*.directory-container {
-   width: 60%; 
-    min-width: 250px;
-    display: flex;
-    flex-flow: row wrap;
-    background-color: white;
-    vertical-align: middle;
-    margin: 1em;
-    border: 2px lavender;
-    position: relative;
-    transition: 0.3s all;
-    box-shadow: 0 2px 5px 0 rgb(3 6 26 / 25%);
-    font-size: 1.2em;
-    background-image: linear-gradient(
-120deg, #fbc2eb 0%, #a6c1ee 100%);
+.content .blurb h2 {
+  color: #226a80;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.content .blurb h2 span {
+  color: #008080;
+  font-size: 50px;
+  font-weight: 800;
+}
+.content .blurb p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 30px;
 }
 
-.picture {
-  
-
-
-
+.content .quiz-button {
+  color: #fff;
+  background: teal;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  /*transition-property: background; */
 }
-*/
+.content .quiz-button:hover {
+  background: tan;
+}
+
 #homebody {
   margin: 0;
   padding: 0;
