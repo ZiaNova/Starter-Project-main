@@ -118,7 +118,7 @@ nav a:hover {
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
 }
-section {
+/*section {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -128,10 +128,10 @@ section {
   background: url(bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-}
+}*/
 
 img {
- 
+
   width: 130px;
   height: 54px;
   object-fit: cover;
