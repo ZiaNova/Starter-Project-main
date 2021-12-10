@@ -145,4 +145,8 @@ h3 {
   display: flex;
   flex-wrap: wrap; 
   height: 50px;
+  font-family: "Mulish", sans-serif;
+  text-transform: uppercase;
+  font-weight: 1000;
+  color: #226a80
 }
