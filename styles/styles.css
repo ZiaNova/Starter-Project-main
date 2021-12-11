@@ -146,6 +146,10 @@ footer:hover {
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
 }
+#homebody h1 {
+  justify-content: center;
+  color: #226a80;
+}
 section {
   position: relative;
   width: 100%;
@@ -158,7 +162,7 @@ section {
   background-position: center;
 }
 
-img {
+img[src="images/NewLogo.svg"] {
   width: 130px;
   height: 54px;
   object-fit: cover;
@@ -186,6 +190,7 @@ h3 {
 .gallery-container {
   width: 1200px;
   display: flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -196,19 +201,23 @@ h3 {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 310px;
   max-width: 300px;
   padding: 20px 15px;
   margin: 25px 10px;
   box-shadow: 0 5px 200px rgba(0, 0, 0, 0.5);
   background: #226a80;
+  transition: 0.3s ease-in-out;
+}
+.gallery-container .card:hover {
+  height: 400px;
 }
 .gallery-container .card .imagebox {
   position: relative;
   width: 250px;
-  height: 250px;
-  top: -50px;
-  left: 25px;
+  height: 20px;
+  top: 0px;
+  left: 1px;
   box-shadow: 0 5px 200px rgba(0, 0, 0, 0.3);
 }
 .gallery-container .card .imagebox #cardimg {
@@ -216,4 +225,44 @@ h3 {
   height: 250px;
   max-width: 100%;
   border-radius: 5px;
+}
+.gallery-container .card .gal-content {
+  position: relative;
+  margin: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.gallery-container .card .gal-content h2 {
+  font-size: 2rem;
+  color: #fff;
+  justify-content: center;
+}
+.gallery-container.card.gal-content p {
+  color: whitesmoke;
+}
+.gallery-container .card:hover .gal-content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+#gallery {
+  font-family: "Mulish", sans-serif;
+  color: #226a80;
+  font-weight: 1000;
+}
+.gallery-container .card:hover {
+  height: 400px;
+}
+@media screen and (max-width: 800px) {
+  .gallery-container.card {
+    width: calc(50% -2rem);
+  }
+}
+@media and (max-width: 800px) {
+  .gallery-container.card {
+    width: %;
+  }
 }
