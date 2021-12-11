@@ -1,81 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz sample</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      defer
+    ></script>
+    <script
+      src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      defer
+    ></script>
+    <script src="scripts/scripts.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>quiz sample</title>
-  <link rel="stylesheet" href="styles/styles.css" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-  <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
-  <script src="scripts/scripts.js" defer></script>
-</head>
-
-<body>
-<header>
-    <h3>
-        <a href="/"><img src="images/NEWQSLOGO.png"/></a>
-        <!--<a href="#" class="logo"><img src="images/QSLOGO.png" alt="" /></a> -->
-        <span class="gap">Quiet Scape</span> 
+  <body>
+    <header>
+      <h3>
+        <a href="/"><img src="images/NewLogo.svg" id="logoimg" /></a>
+        <span class="gap">Quiet Scape</span>
       </h3>
       <nav class="header.nav">
         <a href="directory.html">Scape Directory</a>
         <a href="about.html">About</a>
       </nav>
-</header>
+    </header>
 
-
-
-
-
-
-
-
-
-  <div class="questionContainer">
-    <div id="question1" class="question">
-      <h3>Question 1: What are you looking for?</h3>
-      <input type="radio" name="activity" id="q1opt1" value="study" /><label for="q1opt1">Study</label>
-      <input type="radio" name="activity" id="q1opt2" value="workout" /><label for="q1opt2">Work out</label>
-      <input type="radio" name="activity" id="q1opt3" value="stroll" /><label for="q1opt3">Stroll</label>
-      <input type="radio" name="activity" id="q1opt4" value="meditate" /><label for="q1opt4">Meditate</label>
+    <div class="questionContainer">
+      <div id="question1" class="question">
+        <h3>Question 1: What are you looking for?</h3>
+        <input type="radio" name="activity" id="q1opt1" value="study" /><label
+          for="q1opt1"
+          >Study</label
+        >
+        <input type="radio" name="activity" id="q1opt2" value="workout" /><label
+          for="q1opt2"
+          >Work out</label
+        >
+        <input type="radio" name="activity" id="q1opt3" value="stroll" /><label
+          for="q1opt3"
+          >Stroll</label
+        >
+        <input
+          type="radio"
+          name="activity"
+          id="q1opt4"
+          value="meditate"
+        /><label for="q1opt4">Meditate</label>
+      </div>
+      <div id="question2" class="question">
+        <h3>Question 2: What do you prefer?</h3>
+        <input type="radio" name="density" id="q2opt1" value="low" /><label
+          for="q2opt1"
+          >Low occupancy (less than 15 people)</label
+        >
+        <input type="radio" name="density" id="q2opt2" value="medium" /><label
+          for="q2opt2"
+          >Medium occupancy (15-30 people)</label
+        >
+        <input type="radio" name="density" id="q2opt3" value="high" /><label
+          for="q2opt3"
+          >High occupancy (30+ people)</label
+        >
+      </div>
+      <div id="question3" class="question">
+        <h3>Question 3: Do you like...?</h3>
+        <input type="radio" name="style" id="q3opt1" value="old" /><label
+          for="q3opt1"
+          >Older/historic spots</label
+        >
+        <input type="radio" name="style" id="q3opt2" value="new" /><label
+          for="q3opt2"
+          >Newer/modern spots</label
+        >
+      </div>
+      <div id="question4" class="question">
+        <h3>Question 4: Do you like...?</h3>
+        <input type="radio" name="type" id="q4opt1" value="uncommon" /><label
+          for="q4opt1"
+          >Low key/uncommon locations
+        </label>
+        <input type="radio" name="type" id="q4opt2" value="popular" /><label
+          for="q4opt2"
+          >Popular/touristy locations</label
+        >
+      </div>
+      <div id="question5" class="question">
+        <h3>Question 5: Do you prefer the noise level to be…</h3>
+        <input type="radio" name="sound" id="q5opt1" value="low" /><label
+          for="q5opt1"
+          >Low</label
+        >
+        <input type="radio" name="sound" id="q5opt2" value="medium" /><label
+          for="q5opt2"
+          >Medium</label
+        >
+        <input type="radio" name="sound" id="q5opt3" value="high" /><label
+          for="q5opt3"
+          >High</label
+        >
+      </div>
+      <div id="question6" class="question">
+        <h3>Question 6: Which setting do you prefer?</h3>
+        <input type="radio" name="setting" id="q6opt1" value="indoors" /><label
+          for="q6opt1"
+          >Indoors</label
+        >
+        <input type="radio" name="setting" id="q6opt2" value="outdoors" /><label
+          for="q6opt2"
+          >Outdoors</label
+        >
+        <button type="button" class="end-Btn" id="end-result" id="endBtn">
+          Show my quiet place
+        </button>
+      </div>
     </div>
-    <div id="question2" class="question">
-      <h3>Question 2: What do you prefer?</h3>
-      <input type="radio" name="density" id="q2opt1" value="low" /><label for="q2opt1">Low occupancy (less than 15 people)</label>
-      <input type="radio" name="density" id="q2opt2" value="medium" /><label for="q2opt2">Medium occupancy (15-30 people)</label>
-      <input type="radio" name="density" id="q2opt3" value="high" /><label for="q2opt3">High occupancy (30+ people)</label>
-    </div>
-    <div id="question3" class="question">
-      <h3>Question 3: Do you like...?</h3>
-      <input type="radio" name="style" id="q3opt1" value="old" /><label for="q3opt1">Older/historic spots</label>
-      <input type="radio" name="style" id="q3opt2" value="new" /><label for="q3opt2">Newer/modern spots</label>
-    </div>
-    <div id="question4" class="question">
-      <h3>Question 4: Do you like...?</h3>
-      <input type="radio" name="type" id="q4opt1" value="uncommon" /><label for="q4opt1">Low key/uncommon locations
-      </label>
-      <input type="radio" name="type" id="q4opt2" value="popular" /><label for="q4opt2">Popular/touristy locations</label>
-    </div>
-    <div id="question5" class="question">
-      <h3>Question 5: Do you prefer the noise level to be…</h3>
-      <input type="radio" name="sound" id="q5opt1" value="low" /><label for="q5opt1">Low</label>
-      <input type="radio" name="sound" id="q5opt2" value="medium" /><label for="q5opt2">Medium</label>
-      <input type="radio" name="sound" id="q5opt3" value="high" /><label for="q5opt3">High</label>
-    </div>
-    <div id="question6" class="question">
-      <h3>Question 6: Which setting do you prefer?</h3>
-      <input type="radio" name="setting" id="q6opt1" value="indoors" /><label for="q6opt1">Indoors</label>
-      <input type="radio" name="setting" id="q6opt2" value="outdoors" /><label for="q6opt2">Outdoors</label>
-      <button type="button" class="end-Btn" id="end-result" id="endBtn">
-        Show my quiet place
-      </button>
-    </div>
-  </div>
-  <div id="result-loc"></div>
-</body>
-
+    <div id="result-loc"></div>
+  </body>
 </html>
