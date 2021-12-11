@@ -46,19 +46,30 @@ header {
   box-shadow: 0 2px 5px 0 rgb(3 6 26 / 35%);
   color: #333333;
 }
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: static;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  z-index: 5;
+  box-shadow: 0 2px 5px 0 rgb(3 6 26 / 35%);
+  color: #333333;
+}
 
 nav a {
   color: #008080;
   text-decoration: none;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   padding: 2px 15px;
   border-radius: 20px;
   transition: 0.3s;
   font-size: 25px;
-  font-family: "Mulish", sans-serif;;
-
+  font-family: "Mulish", sans-serif;
 }
 nav a:not(:last-child) {
   margin-right: 30px;
@@ -67,6 +78,22 @@ nav a:not(:last-child) {
 nav a:hover {
   background: lightgray;
 }
+footer {
+  color: #008080;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  font-size: 15px;
+  font-family: "Mulish", sans-serif;
+}
+footer:hover {
+  background: lightgray;
+}
+
 .content {
   max-width: 650px;
   margin: 60px 100px;
@@ -137,18 +164,56 @@ img {
   object-fit: cover;
   display: flex;
   flex-wrap: wrap;
- 
 }
 
 h3 {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   height: 50px;
   font-family: "Mulish", sans-serif;
   text-transform: uppercase;
   font-weight: 1000;
-  color: #226a80
+  color: #226a80;
 }
-  /* gallary */
-body .gallary-contnr
 
+#gallery body {
+  background: #226a80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.gallery-container {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+.gallery-container .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  max-width: 300px;
+  padding: 20px 15px;
+  margin: 25px 10px;
+  box-shadow: 0 5px 200px rgba(0, 0, 0, 0.5);
+  background: #226a80;
+}
+.gallery-container .card .imagebox {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  top: -50px;
+  left: 25px;
+  box-shadow: 0 5px 200px rgba(0, 0, 0, 0.3);
+}
+.gallery-container .card .imagebox #cardimg {
+  position: relative;
+  height: 250px;
+  max-width: 100%;
+  border-radius: 5px;
+}
